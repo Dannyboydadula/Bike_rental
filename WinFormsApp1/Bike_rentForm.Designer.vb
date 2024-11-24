@@ -37,12 +37,12 @@ Partial Class Bike_rentForm
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
-        rfidTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Label4 = New Label()
         Label6 = New Label()
         addressTxt = New Guna.UI2.WinForms.Guna2TextBox()
         submitBtn = New Guna.UI2.WinForms.Guna2Button()
         DateTimePicker1 = New DateTimePicker()
+        rfidTxt = New Guna.UI2.WinForms.Guna2TextBox()
         SuspendLayout()
         ' 
         ' nameTxt
@@ -109,37 +109,17 @@ Partial Class Bike_rentForm
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label3.Location = New Point(57, 229)
+        Label3.Location = New Point(50, 357)
         Label3.Name = "Label3"
         Label3.Size = New Size(57, 20)
         Label3.TabIndex = 5
         Label3.Text = "RFID:"
         ' 
-        ' rfidTxt
-        ' 
-        rfidTxt.CustomizableEdges = CustomizableEdges5
-        rfidTxt.DefaultText = ""
-        rfidTxt.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        rfidTxt.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        rfidTxt.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        rfidTxt.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        rfidTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        rfidTxt.Font = New Font("Segoe UI", 9.75F)
-        rfidTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        rfidTxt.Location = New Point(142, 215)
-        rfidTxt.Name = "rfidTxt"
-        rfidTxt.PasswordChar = ChrW(0)
-        rfidTxt.PlaceholderText = ""
-        rfidTxt.SelectedText = ""
-        rfidTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        rfidTxt.Size = New Size(381, 45)
-        rfidTxt.TabIndex = 4
-        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label4.Location = New Point(57, 298)
+        Label4.Location = New Point(50, 299)
         Label4.Name = "Label4"
         Label4.Size = New Size(168, 20)
         Label4.TabIndex = 7
@@ -149,7 +129,7 @@ Partial Class Bike_rentForm
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label6.Location = New Point(57, 358)
+        Label6.Location = New Point(50, 231)
         Label6.Name = "Label6"
         Label6.Size = New Size(80, 20)
         Label6.TabIndex = 12
@@ -157,7 +137,7 @@ Partial Class Bike_rentForm
         ' 
         ' addressTxt
         ' 
-        addressTxt.CustomizableEdges = CustomizableEdges7
+        addressTxt.CustomizableEdges = CustomizableEdges5
         addressTxt.DefaultText = ""
         addressTxt.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         addressTxt.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -166,18 +146,18 @@ Partial Class Bike_rentForm
         addressTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         addressTxt.Font = New Font("Segoe UI", 9.75F)
         addressTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        addressTxt.Location = New Point(149, 348)
+        addressTxt.Location = New Point(142, 221)
         addressTxt.Name = "addressTxt"
         addressTxt.PasswordChar = ChrW(0)
         addressTxt.PlaceholderText = ""
         addressTxt.SelectedText = ""
-        addressTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        addressTxt.Size = New Size(374, 45)
+        addressTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        addressTxt.Size = New Size(381, 45)
         addressTxt.TabIndex = 11
         ' 
         ' submitBtn
         ' 
-        submitBtn.CustomizableEdges = CustomizableEdges9
+        submitBtn.CustomizableEdges = CustomizableEdges7
         submitBtn.DisabledState.BorderColor = Color.DarkGray
         submitBtn.DisabledState.CustomBorderColor = Color.DarkGray
         submitBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -186,7 +166,7 @@ Partial Class Bike_rentForm
         submitBtn.ForeColor = Color.White
         submitBtn.Location = New Point(210, 414)
         submitBtn.Name = "submitBtn"
-        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         submitBtn.Size = New Size(182, 45)
         submitBtn.TabIndex = 13
         submitBtn.Text = "Submit"
@@ -194,23 +174,45 @@ Partial Class Bike_rentForm
         ' DateTimePicker1
         ' 
         DateTimePicker1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.Location = New Point(245, 295)
+        DateTimePicker1.Location = New Point(245, 294)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(278, 26)
         DateTimePicker1.TabIndex = 14
+        ' 
+        ' rfidTxt
+        ' 
+        rfidTxt.CustomizableEdges = CustomizableEdges9
+        rfidTxt.DefaultText = ""
+        rfidTxt.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        rfidTxt.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        rfidTxt.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        rfidTxt.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        rfidTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        rfidTxt.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        rfidTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        rfidTxt.Location = New Point(158, 345)
+        rfidTxt.Margin = New Padding(4)
+        rfidTxt.Name = "rfidTxt"
+        rfidTxt.PasswordChar = ChrW(0)
+        rfidTxt.PlaceholderText = ""
+        rfidTxt.ReadOnly = True
+        rfidTxt.SelectedText = ""
+        rfidTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        rfidTxt.Size = New Size(306, 50)
+        rfidTxt.TabIndex = 15
         ' 
         ' Bike_rentForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(596, 528)
+        Controls.Add(rfidTxt)
         Controls.Add(DateTimePicker1)
         Controls.Add(submitBtn)
         Controls.Add(Label6)
         Controls.Add(addressTxt)
         Controls.Add(Label4)
         Controls.Add(Label3)
-        Controls.Add(rfidTxt)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(phoneTxt)
@@ -227,10 +229,10 @@ Partial Class Bike_rentForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents rfidTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents addressTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents submitBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents rfidTxt As Guna.UI2.WinForms.Guna2TextBox
 End Class
