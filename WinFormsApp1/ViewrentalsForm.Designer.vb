@@ -25,12 +25,25 @@ Partial Class ViewrentalsForm
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        namecolumn = New DataGridViewTextBoxColumn()
+        rfidcolumn = New DataGridViewTextBoxColumn()
+        renttimecolumn = New DataGridViewTextBoxColumn()
+        returntimecolumn = New DataGridViewTextBoxColumn()
+        statuscolumn = New DataGridViewTextBoxColumn()
+        deleteBtn = New Guna.UI2.WinForms.Guna2Button()
+        refreshBtn = New Guna.UI2.WinForms.Guna2Button()
         CType(Guna2DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Guna2DataGridView1
         ' 
+        Guna2DataGridView1.AllowUserToAddRows = False
+        Guna2DataGridView1.AllowUserToDeleteRows = False
         DataGridViewCellStyle1.BackColor = Color.White
         Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -43,6 +56,7 @@ Partial Class ViewrentalsForm
         Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Guna2DataGridView1.ColumnHeadersHeight = 32
         Guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Guna2DataGridView1.Columns.AddRange(New DataGridViewColumn() {namecolumn, rfidcolumn, renttimecolumn, returntimecolumn, statuscolumn})
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
@@ -52,10 +66,11 @@ Partial Class ViewrentalsForm
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Guna2DataGridView1.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        Guna2DataGridView1.Location = New Point(0, 77)
+        Guna2DataGridView1.Location = New Point(0, 0)
         Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Guna2DataGridView1.ReadOnly = True
         Guna2DataGridView1.RowHeadersVisible = False
-        Guna2DataGridView1.Size = New Size(463, 241)
+        Guna2DataGridView1.Size = New Size(596, 365)
         Guna2DataGridView1.TabIndex = 0
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -70,7 +85,7 @@ Partial Class ViewrentalsForm
         Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White
         Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 32
-        Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Guna2DataGridView1.ThemeStyle.ReadOnly = True
         Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White
         Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F)
@@ -79,11 +94,76 @@ Partial Class ViewrentalsForm
         Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         ' 
+        ' namecolumn
+        ' 
+        namecolumn.HeaderText = "Name"
+        namecolumn.Name = "namecolumn"
+        namecolumn.ReadOnly = True
+        ' 
+        ' rfidcolumn
+        ' 
+        rfidcolumn.HeaderText = "RFID"
+        rfidcolumn.Name = "rfidcolumn"
+        rfidcolumn.ReadOnly = True
+        ' 
+        ' renttimecolumn
+        ' 
+        renttimecolumn.HeaderText = "Rent Time"
+        renttimecolumn.Name = "renttimecolumn"
+        renttimecolumn.ReadOnly = True
+        ' 
+        ' returntimecolumn
+        ' 
+        returntimecolumn.HeaderText = "Return Time"
+        returntimecolumn.Name = "returntimecolumn"
+        returntimecolumn.ReadOnly = True
+        ' 
+        ' statuscolumn
+        ' 
+        statuscolumn.HeaderText = "Status"
+        statuscolumn.Name = "statuscolumn"
+        statuscolumn.ReadOnly = True
+        ' 
+        ' deleteBtn
+        ' 
+        deleteBtn.CustomizableEdges = CustomizableEdges1
+        deleteBtn.DisabledState.BorderColor = Color.DarkGray
+        deleteBtn.DisabledState.CustomBorderColor = Color.DarkGray
+        deleteBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        deleteBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        deleteBtn.Font = New Font("Segoe UI", 12F)
+        deleteBtn.ForeColor = Color.White
+        deleteBtn.Location = New Point(318, 400)
+        deleteBtn.Name = "deleteBtn"
+        deleteBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        deleteBtn.Size = New Size(180, 45)
+        deleteBtn.TabIndex = 1
+        deleteBtn.Text = "Delete"
+        ' 
+        ' refreshBtn
+        ' 
+        refreshBtn.CustomizableEdges = CustomizableEdges3
+        refreshBtn.DisabledState.BorderColor = Color.DarkGray
+        refreshBtn.DisabledState.CustomBorderColor = Color.DarkGray
+        refreshBtn.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        refreshBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        refreshBtn.Font = New Font("Segoe UI", 12F)
+        refreshBtn.ForeColor = Color.White
+        refreshBtn.Location = New Point(112, 400)
+        refreshBtn.Name = "refreshBtn"
+        refreshBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        refreshBtn.Size = New Size(180, 45)
+        refreshBtn.TabIndex = 2
+        refreshBtn.Text = "Refresh"
+        ' 
         ' ViewrentalsForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(463, 447)
+        BackColor = SystemColors.ActiveBorder
+        ClientSize = New Size(596, 528)
+        Controls.Add(refreshBtn)
+        Controls.Add(deleteBtn)
         Controls.Add(Guna2DataGridView1)
         FormBorderStyle = FormBorderStyle.None
         Name = "ViewrentalsForm"
@@ -93,4 +173,11 @@ Partial Class ViewrentalsForm
     End Sub
 
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents deleteBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents refreshBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents namecolumn As DataGridViewTextBoxColumn
+    Friend WithEvents rfidcolumn As DataGridViewTextBoxColumn
+    Friend WithEvents renttimecolumn As DataGridViewTextBoxColumn
+    Friend WithEvents returntimecolumn As DataGridViewTextBoxColumn
+    Friend WithEvents statuscolumn As DataGridViewTextBoxColumn
 End Class

@@ -50,7 +50,7 @@ Partial Class Return_bikeForm
         submitBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         submitBtn.Font = New Font("Segoe UI", 9F)
         submitBtn.ForeColor = Color.White
-        submitBtn.Location = New Point(145, 380)
+        submitBtn.Location = New Point(201, 428)
         submitBtn.Name = "submitBtn"
         submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         submitBtn.Size = New Size(180, 45)
@@ -60,10 +60,10 @@ Partial Class Return_bikeForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(52, 266)
+        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label6.Location = New Point(67, 300)
         Label6.Name = "Label6"
-        Label6.Size = New Size(70, 17)
+        Label6.Size = New Size(87, 21)
         Label6.TabIndex = 23
         Label6.Text = "Feedback:"
         ' 
@@ -78,32 +78,32 @@ Partial Class Return_bikeForm
         Guna2TextBox4.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox4.Font = New Font("Segoe UI", 9.75F)
         Guna2TextBox4.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox4.Location = New Point(126, 256)
+        Guna2TextBox4.Location = New Point(160, 286)
         Guna2TextBox4.Name = "Guna2TextBox4"
         Guna2TextBox4.PasswordChar = ChrW(0)
         Guna2TextBox4.PlaceholderText = ""
         Guna2TextBox4.SelectedText = ""
         Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2TextBox4.Size = New Size(275, 107)
+        Guna2TextBox4.Size = New Size(325, 121)
         Guna2TextBox4.TabIndex = 22
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(52, 200)
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label4.Location = New Point(67, 234)
         Label4.Name = "Label4"
-        Label4.Size = New Size(143, 17)
+        Label4.Size = New Size(175, 21)
         Label4.TabIndex = 20
         Label4.Text = "Return date and time:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(52, 131)
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label3.Location = New Point(67, 165)
         Label3.Name = "Label3"
-        Label3.Size = New Size(41, 17)
+        Label3.Size = New Size(49, 21)
         Label3.TabIndex = 19
         Label3.Text = "RFID:"
         ' 
@@ -118,22 +118,22 @@ Partial Class Return_bikeForm
         Guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox3.Font = New Font("Segoe UI", 9.75F)
         Guna2TextBox3.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox3.Location = New Point(119, 121)
+        Guna2TextBox3.Location = New Point(160, 153)
         Guna2TextBox3.Name = "Guna2TextBox3"
         Guna2TextBox3.PasswordChar = ChrW(0)
         Guna2TextBox3.PlaceholderText = ""
         Guna2TextBox3.SelectedText = ""
         Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2TextBox3.Size = New Size(282, 40)
+        Guna2TextBox3.Size = New Size(325, 45)
         Guna2TextBox3.TabIndex = 18
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(52, 59)
+        Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label1.Location = New Point(67, 93)
         Label1.Name = "Label1"
-        Label1.Size = New Size(48, 17)
+        Label1.Size = New Size(60, 21)
         Label1.TabIndex = 16
         Label1.Text = "Name:"
         ' 
@@ -148,28 +148,29 @@ Partial Class Return_bikeForm
         Guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         Guna2TextBox1.Font = New Font("Segoe UI", 9.75F)
         Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(119, 50)
+        Guna2TextBox1.Location = New Point(160, 81)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.PasswordChar = ChrW(0)
         Guna2TextBox1.PlaceholderText = ""
         Guna2TextBox1.SelectedText = ""
         Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Guna2TextBox1.Size = New Size(282, 40)
+        Guna2TextBox1.Size = New Size(325, 45)
         Guna2TextBox1.TabIndex = 14
         ' 
         ' DateTimePicker1
         ' 
         DateTimePicker1.CalendarFont = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.Location = New Point(201, 198)
+        DateTimePicker1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DateTimePicker1.Location = New Point(258, 234)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.Size = New Size(227, 29)
         DateTimePicker1.TabIndex = 25
         ' 
         ' Return_bikeForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(463, 447)
+        ClientSize = New Size(596, 528)
         Controls.Add(DateTimePicker1)
         Controls.Add(submitBtn)
         Controls.Add(Label6)

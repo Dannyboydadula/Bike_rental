@@ -60,7 +60,7 @@ Partial Class AdminForm
         ' Button1
         ' 
         Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(658, 10)
+        Button1.Location = New Point(832, 8)
         Button1.Name = "Button1"
         Button1.Size = New Size(25, 23)
         Button1.TabIndex = 0
@@ -73,7 +73,7 @@ Partial Class AdminForm
         Panel1.Controls.Add(Button1)
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(693, 43)
+        Panel1.Size = New Size(867, 43)
         Panel1.TabIndex = 31
         ' 
         ' Guna2Panel1
@@ -88,7 +88,7 @@ Partial Class AdminForm
         Guna2Panel1.Location = New Point(0, 43)
         Guna2Panel1.Name = "Guna2Panel1"
         Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Guna2Panel1.Size = New Size(230, 447)
+        Guna2Panel1.Size = New Size(272, 528)
         Guna2Panel1.TabIndex = 32
         ' 
         ' logoutBtn
@@ -158,17 +158,17 @@ Partial Class AdminForm
         ' adminlogo_panel
         ' 
         adminlogo_panel.CustomizableEdges = CustomizableEdges11
-        adminlogo_panel.Location = New Point(230, 43)
+        adminlogo_panel.Location = New Point(271, 43)
         adminlogo_panel.Name = "adminlogo_panel"
         adminlogo_panel.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        adminlogo_panel.Size = New Size(463, 447)
+        adminlogo_panel.Size = New Size(596, 528)
         adminlogo_panel.TabIndex = 33
         ' 
         ' AdminForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(693, 490)
+        ClientSize = New Size(867, 571)
         Controls.Add(adminlogo_panel)
         Controls.Add(Guna2Panel1)
         Controls.Add(Panel1)

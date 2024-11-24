@@ -56,13 +56,13 @@ Partial Class Bike_rentForm
         nameTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         nameTxt.Font = New Font("Segoe UI", 9.75F)
         nameTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        nameTxt.Location = New Point(117, 46)
+        nameTxt.Location = New Point(142, 80)
         nameTxt.Name = "nameTxt"
         nameTxt.PasswordChar = ChrW(0)
         nameTxt.PlaceholderText = ""
         nameTxt.SelectedText = ""
         nameTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        nameTxt.Size = New Size(284, 40)
+        nameTxt.Size = New Size(381, 45)
         nameTxt.TabIndex = 0
         ' 
         ' phoneTxt
@@ -76,42 +76,42 @@ Partial Class Bike_rentForm
         phoneTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         phoneTxt.Font = New Font("Segoe UI", 9.75F)
         phoneTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        phoneTxt.Location = New Point(117, 114)
+        phoneTxt.Location = New Point(142, 149)
         phoneTxt.Name = "phoneTxt"
         phoneTxt.PasswordChar = ChrW(0)
         phoneTxt.PlaceholderText = ""
         phoneTxt.SelectedText = ""
         phoneTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        phoneTxt.Size = New Size(284, 40)
+        phoneTxt.Size = New Size(381, 45)
         phoneTxt.TabIndex = 1
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(50, 55)
+        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label1.Location = New Point(57, 92)
         Label1.Name = "Label1"
-        Label1.Size = New Size(48, 17)
+        Label1.Size = New Size(60, 20)
         Label1.TabIndex = 2
         Label1.Text = "Name:"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(50, 124)
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label2.Location = New Point(57, 161)
         Label2.Name = "Label2"
-        Label2.Size = New Size(51, 17)
+        Label2.Size = New Size(65, 20)
         Label2.TabIndex = 3
         Label2.Text = "Phone:"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(50, 192)
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label3.Location = New Point(57, 229)
         Label3.Name = "Label3"
-        Label3.Size = New Size(41, 17)
+        Label3.Size = New Size(57, 20)
         Label3.TabIndex = 5
         Label3.Text = "RFID:"
         ' 
@@ -126,32 +126,32 @@ Partial Class Bike_rentForm
         rfidTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         rfidTxt.Font = New Font("Segoe UI", 9.75F)
         rfidTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        rfidTxt.Location = New Point(117, 182)
+        rfidTxt.Location = New Point(142, 215)
         rfidTxt.Name = "rfidTxt"
         rfidTxt.PasswordChar = ChrW(0)
         rfidTxt.PlaceholderText = ""
         rfidTxt.SelectedText = ""
         rfidTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        rfidTxt.Size = New Size(284, 40)
+        rfidTxt.Size = New Size(381, 45)
         rfidTxt.TabIndex = 4
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(50, 261)
+        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label4.Location = New Point(57, 298)
         Label4.Name = "Label4"
-        Label4.Size = New Size(130, 17)
+        Label4.Size = New Size(168, 20)
         Label4.TabIndex = 7
         Label4.Text = "Rent date and time:"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(50, 321)
+        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label6.Location = New Point(57, 358)
         Label6.Name = "Label6"
-        Label6.Size = New Size(61, 17)
+        Label6.Size = New Size(80, 20)
         Label6.TabIndex = 12
         Label6.Text = "Address:"
         ' 
@@ -166,13 +166,13 @@ Partial Class Bike_rentForm
         addressTxt.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
         addressTxt.Font = New Font("Segoe UI", 9.75F)
         addressTxt.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        addressTxt.Location = New Point(124, 311)
+        addressTxt.Location = New Point(149, 348)
         addressTxt.Name = "addressTxt"
         addressTxt.PasswordChar = ChrW(0)
         addressTxt.PlaceholderText = ""
         addressTxt.SelectedText = ""
         addressTxt.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        addressTxt.Size = New Size(277, 40)
+        addressTxt.Size = New Size(374, 45)
         addressTxt.TabIndex = 11
         ' 
         ' submitBtn
@@ -184,26 +184,26 @@ Partial Class Bike_rentForm
         submitBtn.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         submitBtn.Font = New Font("Segoe UI", 9F)
         submitBtn.ForeColor = Color.White
-        submitBtn.Location = New Point(143, 376)
+        submitBtn.Location = New Point(210, 414)
         submitBtn.Name = "submitBtn"
         submitBtn.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        submitBtn.Size = New Size(180, 45)
+        submitBtn.Size = New Size(182, 45)
         submitBtn.TabIndex = 13
         submitBtn.Text = "Submit"
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DateTimePicker1.Location = New Point(186, 258)
+        DateTimePicker1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DateTimePicker1.Location = New Point(245, 295)
         DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(215, 25)
+        DateTimePicker1.Size = New Size(278, 26)
         DateTimePicker1.TabIndex = 14
         ' 
         ' Bike_rentForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(463, 447)
+        ClientSize = New Size(596, 528)
         Controls.Add(DateTimePicker1)
         Controls.Add(submitBtn)
         Controls.Add(Label6)
